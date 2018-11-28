@@ -1,0 +1,155 @@
+.foundations__image {
+    margin-bottom: 16px;
+    width: 368px;
+    height: 192px;
+}
+
+.foundations__list {
+    font: var(--title-font);
+    color: #4A3E3C;
+    margin: 128px 0 128px 0;
+}
+
+.foundations__title {
+    font: var(--subtitle-font);
+    color: #4A3E3C;
+}
+
+.foundations-right__description {
+    font: var(--body-font);
+}
+
+.foundations__block {
+    margin-top: 56px;
+}
+
+.foundations__content-right {
+    width: 368px;
+    padding-top: 10px;
+}
+
+.foundations__input-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.foundation__input {
+    color: #4A3E3C;
+    font: var(--body-font);
+    padding: 8px 0;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--main-bg-color);
+    outline: none;
+    margin-top: 40px;
+}
+
+.foundations__send {
+    margin-top: 60px;
+}
+
+.hide-schedule__wrapper {
+    margin-bottom: 100px;
+}
+
+.foundation__list {
+    font: var(--title-font);
+    color: #4a3e3c;
+    margin: 56px 0 128px 0;
+}
+
+.foundation__nav {
+    margin: 64px 0 128px 0;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 2px solid #DBD1CD;
+}
+
+.foundations__list {
+    margin: 128px 0 128px 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -16px;
+}
+.foundation__nav-left{
+    display: inline-flex;
+}
+
+
+
+
+@media (max-width: 1020px) {
+    .foundation__input {
+        width: 466px;
+    }
+    .foundation__nav {
+        margin-bottom: 64px;
+    }
+}
+
+@media (max-width: 660px) {
+    .sponsors__subtitle {
+        width: auto;
+    }
+    .foundations__title {
+        font: 1rem/2.5rem Druk, sans;
+    }
+    .foundation__nav {
+        margin-bottom: 32px;
+    }
+    .foundation__list {
+        margin-bottom: 64px;
+    }
+    .foundation__input {
+        font: 0.8em/1rem 'TT Commons', sans;
+    }
+}
+
+@media (max-width: 420px) {
+    .foundation__input {
+        width: 320px;
+    }
+}
+
+@media (max-width:380px) {
+    .foundations__content-right {
+        width: auto;
+    }
+    .volunteers__content {
+        display: block;
+    }
+    .foundations__content-right {
+        width: auto;
+        padding-top: 64px;
+    }
+    .foundation__input {
+        width: 266px;
+    }
+    .foundation__nav {
+        border: none;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .foundation__nav-left{
+        border-bottom: 2px solid #DBD1CD;
+        flex: none;
+    }
+    .foundations__list {
+        margin-right: 0;
+    }
+    .foundation__nav {
+        border: none;
+    }
+    .foundation__input {
+        width: 270px;
+    }
+}
+
+@media (min-width: 661px) {
+    .foundations__list-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

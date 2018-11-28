@@ -1,0 +1,235 @@
+.h-monuments {
+  position: relative;
+  padding: 128px calc(50vw - 760px);
+}
+.h-monuments__title {
+  text-align: center;
+  font: var(--title-font);
+  color: var(--main-bg-color);
+  margin-bottom: 136px;
+}
+.h-monuments__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h-monuments__prev,
+.h-monuments__next {
+  position: absolute;
+  background: none;
+  border: none;
+  width: 80px; 
+  height: 24px;
+  top: 264px;
+  cursor: pointer;
+  outline: none;
+} 
+.h-monuments__prev {
+  left: 0;
+}
+.h-monuments__next {
+  right: 0;
+}
+.h-monuments__prev .arrow-path,
+.h-monuments__next .arrow-path {
+  transition-duration: .3s;
+}
+.h-monuments__prev:hover .arrow-path {
+  transform: translateX(-32px);
+}
+.h-monuments__next:hover .arrow-path {
+  transform: translateX(32px);
+}
+
+.h-monuments__slider {
+  position: relative;
+  width: 1264px;
+  height: 552px;
+}
+.h-monuments__wrapper {
+  width: 100%;
+}
+.h-monuments__slide {
+  width: 100%;
+  cursor: grab;
+}
+.h-monuments__image {
+  width: 100%;
+  height: 100%;
+}
+.h-monuments__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.h-monuments__data-list {
+  margin-top: 38px;
+  width: 100%;
+  height: 128px;
+  position: relative;
+}
+.h-monuments__data-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition-duration: .3s;
+}
+.h-monuments__data-item--active {
+  opacity: 1;
+}
+.h-monuments__name {
+  font: var(--subtitle-font);
+  color: var(--main-bg-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.h-monuments__name a {
+  text-decoration: none;
+  color: inherit;
+}
+.h-monuments__desc {
+  font: var(--body-font);
+  color: var(--main-bg-color);
+  text-align: center;
+  max-width: 25em;
+}
+.h-monuments .viewmore {
+  padding-top: 105px;
+}
+.h-monuments__marker {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #C15430;
+  transition-duration: .3s;
+  transition-delay: .1s;
+  z-index:9;
+}
+@media (max-width: 1800px) {
+  .h-monuments {
+    padding: 107px calc(50vw - 760px);
+  }
+  .h-monuments__title {
+    margin-bottom: 117px;
+  }
+  .h-monuments .viewmore {
+    padding-top: 94px;
+  }
+}
+@media (max-width: 1660px) {
+  .h-monuments {
+    padding: 61px calc(50vw - 616px);
+  }
+  .h-monuments__title {
+    margin-bottom: 117px;
+  }
+  .h-monuments .viewmore {
+    padding-top: 94px;
+  }
+  .h-monuments__slider {
+    width: 1024px;
+    height: 436px;
+  }
+  .h-monuments__prev,
+  .h-monuments__next {
+    top: 206px;
+  }
+}
+@media (max-width: 1400px) {
+  .h-monuments {
+    padding: 61px calc(50vw - 568px);
+  }
+  .h-monuments__title {
+    margin-bottom: 117px;
+  }
+  .h-monuments .viewmore {
+    padding-top: 52px;
+  }
+  .h-monuments__slider {
+    width: 944px;
+    height: 400px;
+  }
+  .h-monuments__prev,
+  .h-monuments__next {
+    top: 188px;
+  }
+}
+@media (max-width: 1180px) {
+  .h-monuments {
+    padding: 61px calc(50vw - 472px) 74px calc(50vw - 472px);
+  }
+  .h-monuments__title {
+    margin-bottom: 71px;
+  }
+  .h-monuments__data-list {
+    margin-top: 26px;
+  }
+  .h-monuments__prev,
+  .h-monuments__next {
+    display: none;
+  }
+  .h-monuments .viewmore {
+    padding-top: 32px;
+  }
+}
+@media (max-width: 1020px) {
+  .h-monuments {
+    padding: 72px 40px 74px 40px;
+  }
+  .h-monuments__title {
+    text-align: left;
+    margin-bottom: 71px;
+  }
+  .h-monuments__slider {
+    width: 100%;
+    height: calc((100vw - 80px) * 0.407);
+  }
+  .h-monuments__data-item {
+    align-items: flex-start;
+  }
+  .h-monuments__name {
+    margin-bottom: 20px;
+    text-align: left;
+    letter-spacing: 0.6px;
+  }
+  .h-monuments__desc {
+    text-align: left;
+    max-width: 25em;
+  }
+  .h-monuments .viewmore {
+    padding-top: 26px;
+  }
+}
+@media (max-width: 660px) {
+  .h-monuments {
+    padding: 101px 24px 74px 24px;
+  }
+  .h-monuments__title {
+    margin-bottom: 65px;
+  }
+  .h-monuments__slider {
+    width: 100%;
+    height: calc((100vw - 48px) * 0.6);
+  }
+  .h-monuments__name {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+  }
+  .h-monuments .viewmore {
+    padding-top: 45px;
+  }
+  .h-monuments__marker {
+    display: none;
+  }
+}

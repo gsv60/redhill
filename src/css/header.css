@@ -1,0 +1,248 @@
+.header{
+  width: 100vw;
+  height: 100px;
+  padding: 24px calc(50vw - 760px) 0 calc(50vw - 760px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.logo{
+  width: 166px;
+  transform: translateX(-72px);
+  position: fixed;
+  top: 24px;
+  left: calc(50vw - 760px);
+  z-index: 10;
+}
+.logo__img{
+  width: 100%;
+  height: auto;
+}
+.logo__small-img{
+  display: none;
+}
+.header__buttons {
+  width: 136px;
+  margin-top: 21px;
+}
+.burger{
+  font-family: "Druk";
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--main-bg-color);
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  width: 136px;
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  margin-top: 16px;
+  transition: color .4s linear;
+  position: fixed;
+  top: 45px;
+  right: calc(50vw - 776px);
+  z-index: 10;
+  transform: translateX(15px);
+}
+.burger:hover{
+  color:#C15430;
+}
+.burger:hover::before{
+  background-color:#C15430;
+}
+.burger:hover::after{
+  background-color:#C15430;
+}
+.burger::before{
+  content:"" ;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: var(--main-bg-color);
+  position: absolute;
+  top: 4px;
+  right: 0;
+  transition-duration: .4s;
+}
+.burger::after{
+  content:"" ;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color:var(--main-bg-color);
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  transition-duration: .4s;
+}
+.header__chapters,
+.header__goback {
+  font-family: "Druk";
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--main-bg-color);
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  width: 136px;
+  position: relative;
+  text-align: right;
+  margin-top: 16px;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  transition-duration: .4s;
+  transition-property: color;
+  position: absolute;
+  right: calc(50vw - 776px);
+  z-index: 10;
+  transform: translateX(15px);
+}
+.header__chapters {
+  top: 174px;
+}
+.header__goback {
+  top: 206px;
+}
+
+.header-svg{
+  position: relative;
+  left: -15px;
+  top: -2px;
+  border: none;
+}
+.header-svg path{
+  transition-duration: .4s;
+}
+.header__chapters:hover{
+  color: #C15430;
+}
+.header__goback:hover{
+  color: #C15430;
+}
+.header__chapters:hover .header-svg > path{
+  fill: #C15430;
+}
+.header__goback:hover .header-svg > path{
+  fill: #C15430;
+}
+
+
+
+@media (max-width: 1660px) {
+  .header{
+    width: 100vw;
+    padding: 24px calc(50vw - 616px) 0 calc(50vw - 616px);
+  }
+  .logo{
+    left: calc(50vw - 616px);
+  }
+  .burger,
+  .header__chapters,
+  .header__goback {
+    right: calc(50vw - 616px);
+  }
+}
+@media (max-width: 1400px) {
+  .header{
+    width: 100vw;
+    padding: 24px calc(50vw - 568px) 0 calc(50vw - 568px);
+  }
+  .logo{
+    left: calc(50vw - 568px);
+  }
+  .burger,
+  .header__chapters,
+  .header__goback {
+    right: calc(50vw - 568px);
+  }
+}
+@media (max-width: 1270px) {
+  .logo{
+    width: 166px;
+    transform: none;
+  }
+  .logo__img{
+    display: none;
+  }
+  .logo__small-img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .burger {
+    top: 24px;
+  }
+}
+@media (max-width: 1180px) {
+  .header{
+    padding: 24px calc(50vw - 472px) 0 calc(50vw - 472px);
+  }
+  .logo{
+    left: calc(50vw - 472px);
+  }
+  .burger,
+  .header__chapters,
+  .header__goback {
+    right: calc(50vw - 472px);
+    transform: none;
+  }
+}
+@media (max-width: 1020px) {
+  .header{
+    padding: 24px 40px 0 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .logo{
+    left: 40px;
+  }
+  .burger,
+  .header__chapters,
+  .header__goback {
+    right: 40px;
+  }
+}
+@media (max-width: 660px) {
+  .header{
+    padding: 24px 24px 0 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .header__buttons {
+    margin-top: 0;
+}
+  .logo {
+    width: 126px;
+  }
+  .burger {
+    font-size: 0;
+  }
+  .logo{
+    left: 24px;
+  }
+  .burger,
+  .header__chapters,
+  .header__goback {
+    right: 24px;
+  }
+}
+@media (max-width: 360px){
+  .header__buttons {
+    width: 136px;
+    margin-top: 0;
+  }
+  .header__goback{
+    display: none;
+  }
+}
+@media (min-width: 1180px) {
+  .logo {
+  }
+  .burger {
+  }
+}

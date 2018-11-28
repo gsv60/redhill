@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Статья</title>
+    <link rel="stylesheet" href="/css/styles.css" media="all">
+    <script src="/js/bundle.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="/" class="logo">
+            <img class="logo__img" src="/svg/logo.svg" />
+            <img class="logo__small-img" src="/svg/logo-small.svg" />
+        </a>
+        <div class="header__buttons">
+            <button class="burger">
+                Меню
+            </button>
+            <button class="header__goback">
+                <svg xmlns="http://www.w3.org/2000/svg" height="8" width="38" fill="none" class="header-svg">
+                    <path d="M38.001 3H8v2h30.001zM8 8V0L0 4z" fill="#4b4140" /></svg>
+                Назад
+            </button>
+        </div>
+    </header>
+    <!-- Menu -->
+    <div class="menu">
+        <div class="menu__head">
+            <a href="/" class="logo">
+                <img class="logo__img" src="/svg/logo-white.svg" />
+                <img class="logo__small-img" src="/svg/logo-white-small.svg" />
+            </a>
+            <a href="#" class="menu__lang">EN</a>
+            <a href="#" class="menu__glasses">
+                <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="glasses-icon" fill-rule="evenodd" clip-rule="evenodd" d="M13 18C16.3137 18 19 15.3137 19 12C19 8.68629 16.3137 6 13 6C9.68629 6 7 8.68629 7 12C7 15.3137 9.68629 18 13 18ZM20.3652 8.87152C19.1473 6.00793 16.3081 4 13 4C8.58172 4 5 7.58172 5 12C5 16.4183 8.58172 20 13 20C17.4183 20 21 16.4183 21 12C21 11.6098 20.9721 11.2262 20.9181 10.8509C21.8189 10.3106 22.8732 10 24 10C25.1268 10 26.1811 10.3106 27.0819 10.8509C27.0279 11.2262 27 11.6098 27 12C27 16.4183 30.5817 20 35 20C39.4183 20 43 16.4183 43 12C43 7.58172 39.4183 4 35 4C31.6919 4 28.8527 6.00793 27.6348 8.87152C26.5442 8.31429 25.3088 8 24 8C22.6912 8 21.4558 8.31429 20.3652 8.87152ZM29 12C29 15.3137 31.6863 18 35 18C38.3137 18 41 15.3137 41 12C41 8.68629 38.3137 6 35 6C31.6863 6 29 8.68629 29 12Z"
+                        fill="white" />
+                </svg>
+            </a>
+            <button class="menu__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="close-icon" fill-rule="evenodd" clip-rule="evenodd" d="M21.9954 3.41422L20.5812 2L11.9977 10.5835L3.41426 2.00005L2.00005 3.41426L10.5835 11.9977L2 20.5812L3.4142 21.9954L11.9977 13.4119L20.5811 21.9953L21.9953 20.5811L13.4119 11.9977L21.9954 3.41422Z"
+                        fill="white" />
+                </svg>
+            </button>
+        </div>
+        <div class="menu__top">
+            <a class="menu__top-link" href="#">Афиша</a>
+            <a class="menu__top-link" href="#">Экскурсии</a>
+            <a class="menu__top-link" href="#">Экспозиции и выставки</a>
+            <a class="menu__top-link" href="#">Детские программы</a>
+            <a class="menu__top-link menu__primary-link" href="#">История</a>
+        </div>
+        <div class="menu__top menu__top--mobile">
+            <a class="menu__top-link" href="#">О музее</a>
+            <a class="menu__top-link" href="#">Статьи и публикации</a>
+            <a class="menu__top-link" href="#">Партнеры и спонсоры</a>
+        </div>
+        <div class="menu__top menu__top--mobile">
+            <a class="menu__top-link" href="#">Как добраться</a>
+        </div>
+        <div class="menu__secondary">
+            <div class="menu__column">
+                <a class="menu__secondary-link" href="#">О музее</a>
+                <a class="menu__secondary-link" href="#">Новости</a>
+                <a class="menu__secondary-link" href="#">Официально</a>
+                <a class="menu__secondary-link" href="#">Контакты</a>
+                <a class="menu__secondary-link" href="#">Оценка качества</a>
+            </div>
+            <div class="menu__column">
+                <a class="menu__secondary-link" href="#">Фонды</a>
+                <a class="menu__secondary-link" href="#">Публикации</a>
+                <a class="menu__secondary-link" href="#">Альманах</a>
+                <a class="menu__secondary-link" href="#">Мультимедиа</a>
+                <a class="menu__secondary-link" href="#">Книги и буклеты</a>
+            </div>
+            <div class="menu__column">
+                <a class="menu__secondary-link" href="#">Гостевая книга</a>
+                <a class="menu__secondary-link" href="#">Международное сотрудничество</a>
+                <a class="menu__secondary-link" href="#">Партнёры и спонсоры</a>
+            </div>
+            <div class="menu__column menu__column--right">
+                <a class="menu__secondary-link" href="#">Как добраться</a>
+                <a class="menu__secondary-link" href="#">Услуги</a>
+            </div>
+        </div>
+        <form class="menu__search">
+            <input class="menu__input" type="text" placeholder="Поиск по сайту">
+            <button class="subscribe__button">
+                <span class="subscribe__arrow">
+                    <svg viewBox="0 0 80 24" class="subscribe__arrow-svg">
+                        <g class="arrow-path">
+                            <path fill="rgba(255,255,255,.5)" id="path4" d="m -32,11 h 72 v 2 h -72 z" />
+                            <path fill="rgba(255,255,255,.5)" id="path6" d="M 40,16 V 8 l 8,4 z" />
+                        </g>
+                    </svg>
+                </span>
+            </button>
+        </form>
+        <div class="menu__footer">
+            <div class="menu__footer-left">
+                <div class="menu__social">
+                    <a class="menu__social-link" href="#">Vkontakte</a>
+                    <a class="menu__social-link" href="#">Facebook</a>
+                    <a class="menu__social-link" href="#">Instagram</a>
+                    <a class="menu__social-link" href="#">Ok.ru</a>
+                </div>
+                <div class="menu__madeby">Сделано в <a href="https://petrogradweb.ru">Petrogradweb</a></div>
+            </div>
+            <div class="menu__footer-right">
+                Часы работы:</br>Ежедневно, с 9:00 до 21:00
+            </div>
+        </div>
+    </div>
+    <main class='content'>
+        <div class="excursion">
+            <div class="monument__nav">
+                <div class="breadcrumbs">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                    <a class="breadcrumbs__link" href="#">Публикации</a>
+                </div>
+            </div>
+            <h3 class="monument__title">Дом, в котором живет музей</h3>
+            <div class="monument__intro">
+                Здание, в котором находится музей, является историко-архитектурным памятником регионального значения.
+                Этот статус оно получило благодаря возрасту, архитектуре и связанным с ним событиям.
+            </div>
+            <div class="monument__gallery swiper-container">
+                <div class="monument__gallery-wrapper swiper-wrapper">
+                    <div class="monument__img swiper-slide">
+                        <img src="/images/monuments/Здание 1924г.png" alt="">
+                    </div>
+                    <div class="monument__img swiper-slide">
+                        <img src="/images/monuments/Здание 1924г.png" alt="">
+                    </div>
+                    <div class="monument__img swiper-slide">
+                        <img src="/images/monuments/Здание 1924г.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="monument__gallery-nav">
+                <div class="monument__dis">
+                    <i>Здание «Каменного дома». 1924 год</i>
+                </div>
+                <div class="gallery-pages">
+                    <button class="monuments__prev">
+                        <svg viewBox="0 0 80 24">
+                            <g class="arrow-path">
+                                <path style="fill:#4b4140" id="path4" d="M 112,11 H 40 v 2 h 72 z" />
+                                <path style="fill:#4b4140" id="path6" d="M 40,16 V 8 l -8,4 z" />
+                            </g>
+                        </svg>
+                    </button>
+                    <div class="gallery-numbers">
+                    </div>
+                    <button class="monuments__next">
+                        <svg viewBox="0 0 80 24">
+                            <g class="arrow-path">
+                                <path style="fill:#4b4140" id="path4" d="m -32,11 h 72 v 2 h -72 z" />
+                                <path style="fill:#4b4140" id="path6" d="M 40,16 V 8 l 8,4 z" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="monument__text">
+                <div class="monument__intro-paragraph">Монолитное железобетонное здание возводилось проектной конторой
+                    «Инженеры
+                    Жилой дом для управляющего Кемеровским рудником был построен Акционерным Обществом Копикуз в 1916
+                    году,
+                    за два года до образования города Кемерово. Автор проекта здания неизвестен, но известно, что в его
+                    строительстве
+                    участвовали австро-венгерские военнопленные первой мировой войны.
+                </div>
+                <div class="monument__intro-paragraph">
+                    Здание получило название «Каменный дом» из-за стен, облицованных пластами «дикого камня»<span class="long__preview"><img
+                            src="/images/rutgers.jpg" /></span> (так называли необработанный песчаник).
+                    Поэтому его еще можно назвать «домом из песка». При этом каждый камень имеет свой цвет и узор.
+                    Такое
+                    разнообразие цветов, красок и форм песчаника придают внешнему виду здания яркую индивидуальность.
+                    Это
+                    здание было на руднике не только первым каменным, но и единственным благоустроенным дом с
+                    электричеством,
+                    водопроводом, канализацией.
+                </div>
+            </div>
+            <section class="long__sect">
+                <h3 class="article__subtitle">Необычные жильцы</h3>
+                <div class="article__wrapper">
+                    <div class="monument__text">
+                        <div class="monument__intro-paragraph">
+                            <p>
+                                Первым жильцом Каменного дома стал Владимир Николаевич Великорецкий<span class="long__preview"><img
+                                        src="/images/rutgers.jpg" /></span>, в то время управляющий Кемеровским
+                                рудником. Он переехал
+                                в него из обычной бревенчатой избы. Вероятно, в этом доме останавливался во время своих
+                                поездок
+                                на Кемеровский рудник и строящийся коксохимзавод, директор-распорядитель Копикуза Иосиф
+                                Иосифович
+                                Федорович
+                            </p>
+                            <br>
+                            <p>
+                                В 1922 году в Каменном доме появились необычные жильцы. В Кемерово приехали первые
+                                группы иностранных колонистов для работы
+                                в Автономной индустриальной колонии «Кузбасс». Единственный благоустроенный жилой дом
+                                был отдан
+                                под гостиницу для иностранных специалистов, которую называли «Дом приезжих». Многие
+                                главные специалисты
+                                АИК, работавшие на правом берегу, временно поселялись в этом доме до получения квартиры
+                                или дома.
+                                Самым известным жильцом Каменного дома с 1922 по 1925 год, был Главный директор АИК <a
+                                    class="long__person" href="#">Себальд Рутгерс</a><span class="long__preview"><img
+                                        src="/images/rutgers.jpg" /></span>
+                                По его имени здание получило новое название «Дом Рутгерса».
+                            </p>
+                            <br>
+                            <p>
+                                Кроме Рутгерса в Доме приезжих жили главный инженер Кемеровского рудника американец
+                                Альфред Пирсон<span class="long__preview"><img src="/images/rutgers.jpg" /></span> с
+                                семьей, голландский архитектор Ван Лохем, секретарь колонии американка Рут Кеннелл,
+                                управляющий делами АИК Яков Голос и другие специалисты.
+                            </p>
+                            <br>
+                            <p>
+                                Во время посещения Кемерова в Каменном здесь останавливались члены Нью-Йоркского
+                                комитета АИК Том Риз и Паскаль Косгроув, в также деятель рабочего движения
+                                Великобритании Том Манн и другие гости колонии.
+                            </p>
+                            <p>
+                                После отъезда иностранцев, в доме жили советские руководители Кемеровского
+                                рудоуправления.
+                            </p>
+                            <br>
+                            <p>
+                                Во время Великой Отечественной войны в Каменном доме размещался штаб воинской части,
+                                охранявшей военнопленных, работавших на руднике.
+                            </p>
+                            <br>
+                            <p>
+                                В начале 1950-х годов в здании была открыта первая на правом берегу музыкальная школа.
+                                Затем в доме располагался Дом техники с библиотекой, действовал небольшой кинотеатр,
+                                устраивались новогодние елки для детей.
+                            </p>
+                            <br>
+                            <p>
+                                С 1958 по 1962 год в доме размещался Государственный институт «Кузбассгипрошахт». После
+                                переезда института в построенное для него здание на площади А.С. Пушкина, каменный дом
+                                приспособили под детский сад. На этом закончилась его домузейная история.
+                            </p>
+                            <br>
+                            <p>В 1988 году исполком Кемеровского городского Совета народных депутатов принял решение о
+                                передаче здания детского сада под музей. После ремонта в здании открылся
+                                музей-заповедник «Красная Горка».</p>
+                        </div>
+                    </div>
+                    <div class="long__aside">
+                        <figure class="long__fullwidth">
+                            <img class="article__img" src="/images/monuments/Обложка.png" alt="">
+                            <div class="article__dis">
+                                <i>Дом приезжих, он же «Дом Рутгерса»</i>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="article__social">
+                    <a class="article__social-block" href="https://www.facebook.com/sharer/sharer.php?u=http://redhill.tw1.ru"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.492 20" class="article__svg">
+                            <path data-name="Path 41355" d="M9.492 6.938H6.013V4.4c0-.779.806-.959 1.182-.959h2.247V.015L6.866 0A3.946 3.946 0 0 0 2.55 4.193v2.745H0v3.53h2.55V20h3.463v-9.531h2.942z"
+                                fill="#af9188" /></svg>
+                    </a>
+                    <a class="article__social-block" href="https://vk.com/share.php?url=http://redhill.tw1.ru" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12.45" class="article__svg">
+                            <path d="M18.934 7.916a29.944 29.944 0 0 1 2.155 2.167 6.3 6.3 0 0 1 .772 1.113c.3.575.028 1.208-.488 1.242h-3.205a2.474 2.474 0 0 1-2.041-.829c-.444-.452-.855-.933-1.281-1.4a3.035 3.035 0 0 0-.577-.513.67.67 0 0 0-1.067.259 3.367 3.367 0 0 0-.337 1.5c-.034.755-.262.953-1.021.988a8.2 8.2 0 0 1-4.586-.986 10.132 10.132 0 0 1-3.086-2.895 38.9 38.9 0 0 1-4.061-7.24C-.145.751.042.445.672.434a84.17 84.17 0 0 1 3.138 0 .922.922 0 0 1 .87.651 19.451 19.451 0 0 0 2.127 3.941 3.361 3.361 0 0 0 .8.883.488.488 0 0 0 .83-.244 2.735 2.735 0 0 0 .185-.826 12.309 12.309 0 0 0-.05-2.897 1.207 1.207 0 0 0-1.028-1.1C7.238.784 7.283.67 7.432.495a1.152 1.152 0 0 1 .983-.489h3.622c.57.113.7.369.775.942v4.023c-.006.222.111.881.511 1.028.32.1.531-.152.723-.355a12.476 12.476 0 0 0 2.039-3.135c.245-.5.456-1.01.661-1.524a.776.776 0 0 1 .819-.561h3.486a1.839 1.839 0 0 1 .308.019c.587.1.748.353.567.926a8.7 8.7 0 0 1-1.386 2.4c-.581.8-1.2 1.581-1.78 2.391-.53.739-.488 1.111.17 1.753zm0 0"
+                                fill="#af9188" fill-rule="evenodd" /></svg>
+                    </a>
+                    <a class="article__social-block" href="https://connect.ok.ru/offer?url=http://redhill.tw1.ru"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.21 22" class="article__svg">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #af9188
+                                    }
+                                </style>
+                            </defs>
+                            <g id="odnoklassniki-logo" transform="translate(-19.074)">
+                                <g id="Group_414" data-name="Group 414" transform="translate(19.074)">
+                                    <path id="Path_41344" data-name="Path 41344" class="cls-1" d="M24.6 52.5a8.548 8.548 0 0 1-4.56-1.628c-.163-.128-.332-.252-.481-.395A1.367 1.367 0 0 1 21.1 48.25a2.665 2.665 0 0 1 .378.223 7.476 7.476 0 0 0 8.287.076 2.247 2.247 0 0 1 .807-.418 1.267 1.267 0 0 1 1.451.579 1.229 1.229 0 0 1-.088 1.617 6.694 6.694 0 0 1-2.41 1.558 11.312 11.312 0 0 1-2.736.613c.141.153.207.229.3.317 1.267 1.273 2.539 2.54 3.8 3.817a1.257 1.257 0 0 1 .283 1.48 1.5 1.5 0 0 1-1.407.878 1.371 1.371 0 0 1-.891-.456c-.956-.962-1.93-1.906-2.867-2.886-.273-.285-.4-.231-.644.016-.962.99-1.939 1.965-2.922 2.934a1.225 1.225 0 0 1-1.479.265 1.5 1.5 0 0 1-.864-1.378 1.379 1.379 0 0 1 .463-.925q1.88-1.878 3.755-3.761c.084-.081.16-.17.284-.299z"
+                                        transform="translate(-19.074 -37.005)" />
+                                    <path id="Path_41345" data-name="Path 41345" class="cls-1" d="M29.113 11.135a5.568 5.568 0 1 1 5.6-5.5 5.571 5.571 0 0 1-5.6 5.5zm2.765-5.573a2.724 2.724 0 1 0-2.706 2.731 2.712 2.712 0 0 0 2.706-2.73z"
+                                        transform="translate(-22.552)" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <h3 class="article__subtitle">Следующая статья</h3>
+            <div class="article__border">
+                <a href="" class="pub__card-border">
+                    <article class="pub__slide swiper-slide">
+                        <img class="pub__image" src="/images/events/7.jpg" alt="">
+                    </article>
+                    <div class="card__block">
+                        <div class="card__block-title">
+                            Памятник первооткрывателю кузнецкого угля Михайле Волкову
+                        </div>
+                        <div class="cards__block-description">
+                            Памятник Михайле Волкову - наверное, единственный памятник, так тесно исторически и
+                            географически связанный с нашим городом.
+                            Ведь, как говорили на открытии памятника, у города Кемерово два крестных отца – уголь и
+                            рудознатец
+                            Михайло Волков.
+                        </div>
+                        <div class="card__block-date">
+                            <img class="date__img" src="/images/svg/calendar.svg">17.08.2018
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__copyright">
+            &copy; 2018 Музей-заповедник "Красная горка"
+        </div>
+        <a href="#" class="footer__confident">
+            Политика конфидециальности
+        </a>
+        <a href="https://petrogradweb.ru" class="footer__madeby">
+            Сделано в PetrogradWeb
+        </a>
+    </footer>
+</body>
+
+</html>

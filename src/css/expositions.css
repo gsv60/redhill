@@ -1,0 +1,21 @@
+.exposition__nav{
+    margin: 64px 0 128px 0;
+    display: flex;
+    border: none;
+    border-bottom: 2px solid #DBD1CD;
+}
+.exposition{
+        width: 100vw;
+        padding: 0 calc(50vw - 760px) 0 calc(50vw - 760px);
+        margin-bottom: 112px;
+}
+@media (max-width:1020px){
+    .exposition__nav {
+        margin-bottom: 64px;
+    }
+}
+@media (max-width:660px){
+    .exposition__nav {
+        margin-bottom: 32px;
+    }
+}

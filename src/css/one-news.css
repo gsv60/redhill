@@ -1,0 +1,24 @@
+.onews__title{
+    width: 1136px;
+    font: var(--title-font);
+    color: #4A3E3C;
+    margin-bottom: 24px;
+}
+.onews__subtitle{
+    font: var(--caption-font);
+    color: #C15430;
+    margin-bottom: 80px;
+}
+.onews__other{
+    margin-top: 128px;
+    font: var(--subtitle-font);
+    color: #4A3E3C;
+}
+@media (max-width: 1180px){
+    .onews__title{
+        width: auto;
+    }
+    .onews__other{
+        margin-top: 128px;
+    }
+}

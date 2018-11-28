@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Оценка качества услуг</title>
+    <link rel="stylesheet" href="/css/styles.css" media="all">
+    <script src="/js/bundle.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="/" class="logo">
+            <img class="logo__img" src="/svg/logo.svg" />
+            <img class="logo__small-img" src="/svg/logo-small.svg" />
+        </a>
+        <div class="header__buttons">
+            <button class="burger">
+                Меню
+            </button>
+            <button class="header__goback">
+                <svg xmlns="http://www.w3.org/2000/svg" height="8" width="38" fill="none" class="header-svg">
+                    <path d="M38.001 3H8v2h30.001zM8 8V0L0 4z" fill="#4b4140" /></svg>
+                Назад
+            </button>
+        </div>
+    </header>
+    <!-- Menu -->
+    <div class="menu">
+        <div class="menu__head">
+            <a href="/" class="logo">
+                <img class="logo__img" src="/svg/logo-white.svg" />
+                <img class="logo__small-img" src="/svg/logo-white-small.svg" />
+            </a>
+            <a href="#" class="menu__lang">EN</a>
+            <a href="#" class="menu__glasses">
+                <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="glasses-icon" fill-rule="evenodd" clip-rule="evenodd" d="M13 18C16.3137 18 19 15.3137 19 12C19 8.68629 16.3137 6 13 6C9.68629 6 7 8.68629 7 12C7 15.3137 9.68629 18 13 18ZM20.3652 8.87152C19.1473 6.00793 16.3081 4 13 4C8.58172 4 5 7.58172 5 12C5 16.4183 8.58172 20 13 20C17.4183 20 21 16.4183 21 12C21 11.6098 20.9721 11.2262 20.9181 10.8509C21.8189 10.3106 22.8732 10 24 10C25.1268 10 26.1811 10.3106 27.0819 10.8509C27.0279 11.2262 27 11.6098 27 12C27 16.4183 30.5817 20 35 20C39.4183 20 43 16.4183 43 12C43 7.58172 39.4183 4 35 4C31.6919 4 28.8527 6.00793 27.6348 8.87152C26.5442 8.31429 25.3088 8 24 8C22.6912 8 21.4558 8.31429 20.3652 8.87152ZM29 12C29 15.3137 31.6863 18 35 18C38.3137 18 41 15.3137 41 12C41 8.68629 38.3137 6 35 6C31.6863 6 29 8.68629 29 12Z"
+                        fill="white" />
+                </svg>
+            </a>
+            <button class="menu__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="close-icon" fill-rule="evenodd" clip-rule="evenodd" d="M21.9954 3.41422L20.5812 2L11.9977 10.5835L3.41426 2.00005L2.00005 3.41426L10.5835 11.9977L2 20.5812L3.4142 21.9954L11.9977 13.4119L20.5811 21.9953L21.9953 20.5811L13.4119 11.9977L21.9954 3.41422Z"
+                        fill="white" />
+                </svg>
+            </button>
+        </div>
+        <div class="menu__top">
+            <a class="menu__top-link" href="#">Афиша</a>
+            <a class="menu__top-link" href="#">Экскурсии</a>
+            <a class="menu__top-link" href="#">Экспозиции и выставки</a>
+            <a class="menu__top-link" href="#">Детские программы</a>
+            <a class="menu__top-link menu__primary-link" href="#">История</a>
+        </div>
+        <div class="menu__top menu__top--mobile">
+            <a class="menu__top-link" href="#">О музее</a>
+            <a class="menu__top-link" href="#">Статьи и публикации</a>
+            <a class="menu__top-link" href="#">Партнёры и спонсоры</a>
+        </div>
+        <div class="menu__top menu__top--mobile">
+            <a class="menu__top-link" href="#">Как добраться</a>
+        </div>
+        <div class="menu__secondary">
+            <div class="menu__column">
+                <a class="menu__secondary-link" href="#">О музее</a>
+                <a class="menu__secondary-link" href="#">Новости</a>
+                <a class="menu__secondary-link" href="#">Официально</a>
+                <a class="menu__secondary-link" href="#">Контакты</a>
+                <a class="menu__secondary-link" href="#">Оценка качества</a>
+            </div>
+            <div class="menu__column">
+                <a class="menu__secondary-link" href="#">Фонды</a>
+                <a class="menu__secondary-link" href="#">Публикации</a>
+                <a class="menu__secondary-link" href="#">Альманах</a>
+                <a class="menu__secondary-link" href="#">Мультимедиа</a>
+                <a class="menu__secondary-link" href="#">Книги и буклеты</a>
+            </div>
+            <div class="menu__column">
+                <a class="menu__secondary-link" href="#">Гостевая книга</a>
+                <a class="menu__secondary-link" href="#">Международное сотрудничество</a>
+                <a class="menu__secondary-link" href="#">Партнеры и спонсоры</a>
+            </div>
+            <div class="menu__column menu__column--right">
+                <a class="menu__secondary-link" href="#">Как добраться</a>
+                <a class="menu__secondary-link" href="#">Услуги</a>
+            </div>
+        </div>
+        <form class="menu__search">
+            <input class="menu__input" type="text" placeholder="Поиск по сайту">
+            <button class="subscribe__button">
+                <span class="subscribe__arrow">
+                    <svg viewBox="0 0 80 24" class="subscribe__arrow-svg">
+                        <g class="arrow-path">
+                            <path fill="rgba(255,255,255,.5)" id="path4" d="m -32,11 h 72 v 2 h -72 z" />
+                            <path fill="rgba(255,255,255,.5)" id="path6" d="M 40,16 V 8 l 8,4 z" />
+                        </g>
+                    </svg>
+                </span>
+            </button>
+        </form>
+        <div class="menu__footer">
+            <div class="menu__footer-left">
+                <div class="menu__social">
+                    <a class="menu__social-link" href="#">Vkontakte</a>
+                    <a class="menu__social-link" href="#">Facebook</a>
+                    <a class="menu__social-link" href="#">Instagram</a>
+                    <a class="menu__social-link" href="#">Ok.ru</a>
+                </div>
+                <div class="menu__madeby">Сделано в <a href="https://petrogradweb.ru">Petrogradweb</a></div>
+            </div>
+            <div class="menu__footer-right">
+                Часы работы:</br>Ежедневно, с 9:00 до 21:00
+            </div>
+        </div>
+    </div>
+    <main class='content'>
+        <div class="excursion">
+            <div class="excursion__nav">
+                <div class="breadcrumbs">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </div>
+            </div>
+            <div class="excursion__content-left">
+                <h3 class="raiting__title">Оценка качества услуг</h3>
+                <div class="raiting__subtitle">Уважаемые кемеровчане! Ответьте, пожалуйста, на вопросы этой анкеты.
+                    Ваши
+                    ответы позволят лучше организовать работу музея-заповедника «Красная Горка».</div>
+            </div>
+            <div class="raiting__personality">
+                <input type="text" class="raiting__form" placeholder="Укажите Ваш возраст">
+                <div class="raiting__sex">
+                    <div class="raiting__sex-title">Ваш пол</div>
+                    <div class="choose">
+                        <input name="sex" type="radio" class="choose__input" id="male">
+                        <label label class="choose__label" for="male">М</label>
+                        <input name="sex" type="radio" class="choose__input" id="female">
+                        <label label class="choose__label" for="female">Ж</label>
+                    </div>
+                </div>
+            </div>
+            <h4 class="raiting__sub">В каждом пункте проставьте баллы от 1 до 5</h4>
+            <div class="raiting__subtitle">01. Доступность и актуальность информации о деятельности музея, размещенной
+                на
+                его территории</div>
+            <div class="raiting__numbers">
+                <input name="numbers1" type="radio" class="choose__num" id="1_1">
+                <label label class="choose__numbers" for="1_1">1</label>
+                <input name="numbers1" type="radio" class="choose__num" id="1_2">
+                <label label class="choose__numbers" for="1_2">2</label>
+                <input name="numbers1" type="radio" class="choose__num" id="1_3">
+                <label label class="choose__numbers" for="1_3">3</label>
+                <input name="numbers1" type="radio" class="choose__num" id="1_4">
+                <label label class="choose__numbers" for="1_4">4</label>
+                <input name="numbers1" type="radio" class="choose__num" id="1_5">
+                <label label class="choose__numbers" for="1_5">5</label>
+            </div>
+            <div class="raiting__subtitle">02. Комфортность условий пребывания в музее</div>
+            <div class="raiting__numbers">
+                <input name="numbers2" type="radio" class="choose__num" id="2_1">
+                <label label class="choose__numbers" for="2_1">1</label>
+                <input name="numbers2" type="radio" class="choose__num" id="2_2">
+                <label label class="choose__numbers" for="2_2">2</label>
+                <input name="numbers2" type="radio" class="choose__num" id="2_3">
+                <label label class="choose__numbers" for="2_3">3</label>
+                <input name="numbers2" type="radio" class="choose__num" id="2_4">
+                <label label class="choose__numbers" for="2_4">4</label>
+                <input name="numbers2" type="radio" class="choose__num" id="2_5">
+                <label label class="choose__numbers" for="2_5">5</label>
+            </div>
+            <div class="raiting__subtitle">03. Дополнительные услуги и доступность их получения</div>
+            <div class="raiting__numbers">
+                <input name="numbers3" type="radio" class="choose__num" id="3_1">
+                <label label class="choose__numbers" for="3_1">1</label>
+                <input name="numbers3" type="radio" class="choose__num" id="3_2">
+                <label label class="choose__numbers" for="3_2">2</label>
+                <input name="numbers3" type="radio" class="choose__num" id="3_3">
+                <label label class="choose__numbers" for="3_3">3</label>
+                <input name="numbers3" type="radio" class="choose__num" id="3_4">
+                <label label class="choose__numbers" for="3_4">4</label>
+                <input name="numbers3" type="radio" class="choose__num" id="3_5">
+                <label label class="choose__numbers" for="3_5">5</label>
+            </div>
+            <div class="raiting__subtitle">04. Удобство пользования электронными сервисами, предоставляемыми музеем</div>
+            <div class="raiting__numbers">
+                <input name="numbers4" type="radio" class="choose__num" id="4_1">
+                <label label class="choose__numbers" for="4_1">1</label>
+                <input name="numbers4" type="radio" class="choose__num" id="4_2">
+                <label label class="choose__numbers" for="4_2">2</label>
+                <input name="numbers4" type="radio" class="choose__num" id="4_3">
+                <label label class="choose__numbers" for="4_3">3</label>
+                <input name="numbers4" type="radio" class="choose__num" id="4_4">
+                <label label class="choose__numbers" for="4_4">4</label>
+                <input name="numbers4" type="radio" class="choose__num" id="4_5">
+                <label label class="choose__numbers" for="4_5">5</label>
+            </div>
+            <div class="raiting__subtitle">05. Удобство графика работы музея
+            </div>
+            <div class="raiting__numbers">
+                <input name="numbers5" type="radio" class="choose__num" id="5_1">
+                <label label class="choose__numbers" for="5_1">1</label>
+                <input name="numbers5" type="radio" class="choose__num" id="5_2">
+                <label label class="choose__numbers" for="5_2">2</label>
+                <input name="numbers5" type="radio" class="choose__num" id="5_3">
+                <label label class="choose__numbers" for="5_3">3</label>
+                <input name="numbers5" type="radio" class="choose__num" id="5_4">
+                <label label class="choose__numbers" for="5_4">4</label>
+                <input name="numbers5" type="radio" class="choose__num" id="5_5">
+                <label label class="choose__numbers" for="5_5">5</label>
+            </div>
+            <div class="raiting__subtitle">06. Доступность услуг для инвалидов </div>
+            <div class="raiting__numbers">
+                <input name="numbers6" type="radio" class="choose__num" id="6_1">
+                <label label class="choose__numbers" for="6_1">1</label>
+                <input name="numbers6" type="radio" class="choose__num" id="6_2">
+                <label label class="choose__numbers" for="6_2">2</label>
+                <input name="numbers6" type="radio" class="choose__num" id="6_3">
+                <label label class="choose__numbers" for="6_3">3</label>
+                <input name="numbers6" type="radio" class="choose__num" id="6_4">
+                <label label class="choose__numbers" for="6_4">4</label>
+                <input name="numbers6" type="radio" class="choose__num" id="6_5">
+                <label label class="choose__numbers" for="6_5">5</label>
+            </div>
+            <div class="raiting__subtitle">07. Соблюдение режима работы музея </div>
+            <div class="raiting__numbers">
+                <input name="numbers7" type="radio" class="choose__num" id="7_1">
+                <label label class="choose__numbers" for="7_1">1</label>
+                <input name="numbers7" type="radio" class="choose__num" id="7_2">
+                <label label class="choose__numbers" for="7_2">2</label>
+                <input name="numbers7" type="radio" class="choose__num" id="7_3">
+                <label label class="choose__numbers" for="7_3">3</label>
+                <input name="numbers7" type="radio" class="choose__num" id="7_4">
+                <label label class="choose__numbers" for="7_4">4</label>
+                <input name="numbers7" type="radio" class="choose__num" id="7_5">
+                <label label class="choose__numbers" for="7_5">5</label>
+            </div>
+            <div class="raiting__subtitle">08. Соблюдение установленных (заявленных) сроков предоставления услуг музеем</div>
+            <div class="raiting__numbers">
+                <input name="numbers8" type="radio" class="choose__num" id="8_1">
+                <label label class="choose__numbers" for="8_1">1</label>
+                <input name="numbers8" type="radio" class="choose__num" id="8_2">
+                <label label class="choose__numbers" for="8_2">2</label>
+                <input name="numbers8" type="radio" class="choose__num" id="8_3">
+                <label label class="choose__numbers" for="8_3">3</label>
+                <input name="numbers8" type="radio" class="choose__num" id="8_4">
+                <label label class="choose__numbers" for="8_4">4</label>
+                <input name="numbers8" type="radio" class="choose__num" id="8_5">
+                <label label class="choose__numbers" for="8_5">5</label>
+            </div>
+            <div class="raiting__subtitle">09. Доброжелательность и вежливость персонала музея</div>
+            <div class="raiting__numbers">
+                <input name="numbers9" type="radio" class="choose__num" id="9_1">
+                <label label class="choose__numbers" for="9_1">1</label>
+                <input name="numbers9" type="radio" class="choose__num" id="9_2">
+                <label label class="choose__numbers" for="9_2">2</label>
+                <input name="numbers9" type="radio" class="choose__num" id="9_3">
+                <label label class="choose__numbers" for="9_3">3</label>
+                <input name="numbers9" type="radio" class="choose__num" id="9_4">
+                <label label class="choose__numbers" for="9_4">4</label>
+                <input name="numbers9" type="radio" class="choose__num" id="9_5">
+                <label label class="choose__numbers" for="9_5">5</label>
+            </div>
+            <div class="raiting__subtitle">10. Компетентность персонала музея </div>
+            <div class="raiting__numbers">
+                <input name="numbers10" type="radio" class="choose__num" id="10_1">
+                <label label class="choose__numbers" for="10_1">1</label>
+                <input name="numbers10" type="radio" class="choose__num" id="10_2">
+                <label label class="choose__numbers" for="10_2">2</label>
+                <input name="numbers10" type="radio" class="choose__num" id="10_3">
+                <label label class="choose__numbers" for="10_3">3</label>
+                <input name="numbers10" type="radio" class="choose__num" id="10_4">
+                <label label class="choose__numbers" for="10_4">4</label>
+                <input name="numbers10" type="radio" class="choose__num" id="10_5">
+                <label label class="choose__numbers" for="10_5">5</label>
+            </div>
+            <div class="raiting__subtitle">11. Удовлетворенность качеством оказания услуг музея в целом </div>
+            <div class="raiting__numbers">
+                <input name="numbers11" type="radio" class="choose__num" id="11_1">
+                <label label class="choose__numbers" for="11_1">1</label>
+                <input name="numbers11" type="radio" class="choose__num" id="11_2">
+                <label label class="choose__numbers" for="11_2">2</label>
+                <input name="numbers11" type="radio" class="choose__num" id="11_3">
+                <label label class="choose__numbers" for="11_3">3</label>
+                <input name="numbers11" type="radio" class="choose__num" id="11_4">
+                <label label class="choose__numbers" for="11_4">4</label>
+                <input name="numbers11" type="radio" class="choose__num" id="11_5">
+                <label label class="choose__numbers" for="11_5">5</label>
+            </div>
+            <div class="raiting__subtitle">12. Удовлетворенность материально-техническим обеспечением музея </div>
+            <div class="raiting__numbers">
+                <input name="numbers12" type="radio" class="choose__num" id="12_1">
+                <label label class="choose__numbers" for="12_1">1</label>
+                <input name="numbers12" type="radio" class="choose__num" id="12_2">
+                <label label class="choose__numbers" for="12_2">2</label>
+                <input name="numbers12" type="radio" class="choose__num" id="12_3">
+                <label label class="choose__numbers" for="12_3">3</label>
+                <input name="numbers12" type="radio" class="choose__num" id="12_4">
+                <label label class="choose__numbers" for="12_4">4</label>
+                <input name="numbers12" type="radio" class="choose__num" id="12_5">
+                <label label class="choose__numbers" for="12_5">5</label>
+            </div>
+            <div class="raiting__subtitle">13. Удовлетворенность качеством и содержанием полиграфических материалов
+                музея
+            </div>
+            <div class="raiting__numbers">
+                <input name="numbers13" type="radio" class="choose__num" id="13_1">
+                <label label class="choose__numbers" for="13_1">1</label>
+                <input name="numbers13" type="radio" class="choose__num" id="13_2">
+                <label label class="choose__numbers" for="13_2">2</label>
+                <input name="numbers13" type="radio" class="choose__num" id="13_3">
+                <label label class="choose__numbers" for="13_3">3</label>
+                <input name="numbers13" type="radio" class="choose__num" id="13_4">
+                <label label class="choose__numbers" for="13_4">4</label>
+                <input name="numbers13" type="radio" class="choose__num" id="13_5">
+                <label label class="choose__numbers" for="13_5">5</label>
+            </div>
+            <div class="raiting__subtitle">14. Удовлетворенность качеством и полнотой информации о деятельности музея,
+                размещенной на
+                официальном сайте в сети «интернет» </div>
+            <div class="raiting__numbers">
+                <input name="numbers14" type="radio" class="choose__num" id="14_1">
+                <label label class="choose__numbers" for="14_1">1</label>
+                <input name="numbers14" type="radio" class="choose__num" id="14_2">
+                <label label class="choose__numbers" for="14_2">2</label>
+                <input name="numbers14" type="radio" class="choose__num" id="14_3">
+                <label label class="choose__numbers" for="14_3">3</label>
+                <input name="numbers14" type="radio" class="choose__num" id="14_4">
+                <label label class="choose__numbers" for="14_4">4</label>
+                <input name="numbers14" type="radio" class="choose__num" id="14_5">
+                <label label class="choose__numbers" for="14_5">5</label>
+            </div>
+            <div class="send__block">
+                <a class="raiting__send" href="#">
+                    Отправить
+                    <svg class="services__card-arrow" viewBox="0 0 80 24">
+                        <g class="arrow-path">
+                            <path style="fill:#4b4140" id="path4" d="m -32,11 h 72 v 2 h -72 z" />
+                            <path style="fill:#4b4140" id="path6" d="M 40,16 V 8 l 8,4 z" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__copyright">
+            &copy; 2018 Музей-заповедник "Красная горка"
+        </div>
+        <a href="#" class="footer__confident">
+            Политика конфидециальности
+        </a>
+        <a href="https://petrogradweb.ru" class="footer__madeby">
+            Сделано в PetrogradWeb
+        </a>
+    </footer>
+</body>
+
+</html>

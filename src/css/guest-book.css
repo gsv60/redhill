@@ -1,0 +1,26 @@
+.guest__title{
+    font: var(--title-font);
+    color: #4A3E3C;
+    margin-bottom: 96px;
+}
+.guest__block{
+        display: flex;
+        flex-direction: column;
+        width: 1024px;
+        padding: 0 0 0 144px;
+}
+
+
+@media (max-width: 1020px){
+    .guest__block{
+        padding: 0 0 0 24px;
+    }
+}
+
+@media (max-width: 600px){
+    .guest__block{
+    width: auto;
+    margin: 24px 0 0 0;
+    padding: 0;
+    }
+}

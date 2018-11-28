@@ -1,0 +1,18 @@
+.breadcrumbs__link {
+  font: var(--body-font);
+  color: #af9188;
+  text-decoration: none;
+  transition-duration: .4s;
+}
+.breadcrumbs__link:hover{
+  color:#C15430;
+}
+.breadcrumbs__link::after {
+  content: '\22C5';
+  padding: 0 1px 0 3px;
+  position: relative;
+  top: 2px;
+}
+.breadcrumbs__link:last-child::after {
+  content: none;
+}

@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Druk';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/druk.woff2') format('woff2'); 
+}
+@font-face {
+  font-family: 'TT Commons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ttcommons.woff') format('woff'); 
+}
+:root{
+  --big-title-font: 72px/80px Druk,sans;
+  --title-font: 48px/56px Druk,sans;
+  --s_title-font: 24px/32px Druk, sans;
+  --subtitle-font: 32px/40px Druk,sans;
+  --caption-font: 16px/22px Druk,sans;
+  --link-font: 14px/24px Druk,sans;
+  --s_link-font: 15px/24px 'TT Commons',sans;
+  --body-font: 18px/24px 'TT Commons', sans;
+  --link-mobile-font: 12px/16px 'TT Commons', sans;
+}
+@media (max-width: 1660px) {
+  :root{
+    --big-title-font: 64px/72px Druk,sans;
+    --title-font: 40px/48px Druk,sans;
+    --subtitle-font: 28px/36px Druk,sans;
+    --caption-font: 14px/20px Druk,sans;
+    --link-font: 14px/24px Druk,sans;
+    --body-font: 18px/24px 'TT Commons', sans;
+  }
+}
+@media (max-width: 1400px) {
+  :root{
+    --big-title-font: 56px/64px Druk,sans;
+    --title-font: 32px/40px Druk,sans;
+    --subtitle-font: 24px/32px Druk,sans;
+    --caption-font: 14px/18px Druk,sans;
+    --link-font: 14px/24px Druk,sans;
+    --body-font: 17px/24px 'TT Commons', sans;
+  }
+}
+@media (max-width: 1180px) {
+  :root{
+    --big-title-font: 56px/64px Druk,sans;
+    --title-font: 32px/40px Druk,sans;
+    --subtitle-font: 24px/32px Druk,sans;
+    --caption-font: 15px/18px Druk,sans;
+    --link-font: 14px/24px Druk,sans;
+    --body-font: 17px/24px 'TT Commons', sans;
+  }
+}
+@media (max-width: 1020px) {
+  :root{
+    --big-title-font: 56px/64px Druk,sans;
+    --title-font: 32px/40px Druk,sans;
+    --subtitle-font: 24px/32px Druk,sans;
+    --caption-font: 16px/18px Druk,sans;
+    --link-font: 14px/24px Druk,sans;
+    --body-font: 17px/24px 'TT Commons', sans;
+  }
+}
+@media (max-width: 660px) {
+  :root{
+    --big-title-font: 30px/33px Druk,sans;
+    --title-font: 30px/38px Druk,sans;
+    --subtitle-font: 19px/26px Druk,sans;
+    --caption-font: 16px/18px Druk,sans;
+    --link-font: 14px/24px Druk,sans;
+    --body-font: 18px/24px 'TT Commons', sans;
+  }
+}

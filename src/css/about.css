@@ -1,0 +1,5 @@
+.about__name {
+    font: var(--caption-font);
+    color: var(--main-bg-color);
+    margin-top: 48px;
+  }

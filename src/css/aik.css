@@ -1,0 +1,26 @@
+@media (max-width: 1020px){
+    
+    .long__fullwidth{
+        width: 688px;
+    }
+}
+@media (max-width: 660px){
+    .long__text{
+        width: auto;
+    }
+    .long__fullwidth{
+        width: 332px;
+    }
+    .header__chapters{
+        display: none;
+    }
+    .aik__des{
+        width: auto;
+    }
+}
+@media (max-width: 360px){
+    
+    .long__fullwidth{
+        width: 272px;
+    }
+}

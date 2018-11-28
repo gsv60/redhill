@@ -1,0 +1,20 @@
+.privacy-policy__title{
+    font: var(--title-font);
+    color: #4A3E3C;
+    margin: 32px 0 48px 0;
+}
+@media (max-width: 660px){
+    .privacy-policy__title {
+        font: 1.3rem/1.5rem Druk,sans;
+    }
+}
+@media(max-width:320px){
+    .privacy-policy__title {
+        font: 1.1rem/1.5rem Druk,sans;
+    }
+}
+@media (max-width: 1660px){
+    .sponsors__subtitle p{
+        width: auto;
+    }
+}

@@ -1,0 +1,24 @@
+.sponsors__content-left{
+    padding-bottom: 64px;
+}
+.sponsors__title{
+    font: var(--caption-font);
+    color: #4A3E3C;
+}
+.sponsors__subtitle{
+    margin-top: 32px;
+    font: var(--body-font);
+    color: var(--main-bg-color);
+    width: 880px;
+}
+.sponsors__subtitle p {
+    margin-bottom: 16px;
+}
+.sponsors__block{
+    margin-top: 46px;
+}
+@media (max-width: 1020px){
+    .sponsors__subtitle{
+        width: auto;
+    }
+}

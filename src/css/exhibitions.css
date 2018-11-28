@@ -1,0 +1,12 @@
+.exhibitions__nav{
+    margin: 64px 0 0 0;
+    display: flex;
+    border: none;
+    border-bottom: 2px solid #DBD1CD;
+}
+.exhibitions__list{
+        margin-top: 80px;
+        margin-bottom: 128px;
+        display: flex;
+        flex-direction: column;
+}

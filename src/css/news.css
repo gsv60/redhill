@@ -1,0 +1,124 @@
+.news__nav {
+    margin: 64px 0 128px 0;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 2px solid #DBD1CD;
+}
+
+.news__nav-left {
+    display: flex;
+}
+
+.news__nav-right {
+    display: flex;
+}
+
+.off__menu-right {
+    font: var(--body-font);
+    color: #4A3E3C;
+    padding-bottom: 14px;
+    cursor: pointer;
+    margin-right: 32px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    top: 2px;
+    flex: none;
+}
+
+.nav__year {
+    font: var(--body-font);
+    color: #4A3E3C;
+    margin: 0 0 0 32px;
+}
+
+.news__hide-first {
+    margin-top: 64px;
+    padding-bottom: 16px;
+    font: var(--caption-font);
+    color: #4A3E3C;
+    border: none;
+    border-bottom: 1px solid #DBD1CC;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.news__hide {
+    margin-top: 16px;
+    padding-bottom: 16px;
+    font: var(--caption-font);
+    color: #4A3E3C;
+    border: none;
+    border-bottom: 1px solid #DBD1CC;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.news__hide-first:hover {
+    border-bottom-color: #ce6340;
+}
+
+.news__hide:hover {
+    border-bottom-color: #ce6340;
+}
+
+.news-year__mobile {
+    display: none;
+}
+
+.foundation__nav-left {
+    display: inline-flex;
+}
+
+.foundation__nav-right {
+    display: inline-flex;
+}
+
+.off__menu-hide {
+    display: none;
+    font: var(--body-font);
+    color: #4A3E3C;
+    padding-bottom: 14px;
+    cursor: pointer;
+    margin-right: 32px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    top: 2px;
+    flex: none;
+}
+
+@media(max-width: 660px) {
+    .news__nav {
+        margin-bottom: 24px;
+    }
+    .news-year__mobile {
+        display: flex;
+        margin-top: 36px;
+    }
+    .year__mobile {
+        font: var(--caption-font);
+        color: var(--main-bg-color);
+        margin-right: 18px;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .off__menu-hide {
+        display: block;
+    }
+    .news__nav-right {
+        display: none;
+    }
+    .news__nav-left{
+        border-bottom: 2px solid #DBD1CD;
+        flex: none;
+    }
+    .news__nav {
+        border: none;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}

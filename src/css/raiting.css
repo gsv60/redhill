@@ -1,0 +1,146 @@
+.raiting__title{
+    font: var(--title-font);
+    color: #4A3E3C;
+    margin-bottom: 32px;
+}
+.raiting__subtitle{
+    margin-top: 48px;
+    font: var(--body-font);
+    color: var(--main-bg-color);
+    width: 880px;
+}
+.raiting__form{
+    font: var(--body-font);
+    color: #4b3934;
+    width: 240px;
+    padding: 8px 0;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #4b3934;
+    border-bottom: 2px solid var(--main-bg-color);
+}
+.raiting__form:focus{
+    outline: none
+}
+.raiting__personality{
+    display: flex;
+    margin-top: 72px;
+}
+.raiting__sex{
+    display: flex;
+    align-items: center;
+    margin-left: 42px;
+}
+.raiting__sex-title{
+    font: var( --body-font);
+    color: #4A3E3C;
+    margin-right: 17px;
+}
+.raiting__svg{
+    cursor: pointer;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.raiting__img{
+    display: flex;
+}
+.raiting__img-choosen{
+    display: none;
+}
+.raiting__sub{
+    margin-top: 128px;
+    font: var(--s_title-font);
+    color: #4A3E3C;
+}
+.raiting__numbers{
+    display: flex;
+    margin-top: 18px;
+}
+.raiting__send{
+    width: 230px;
+    position: relative;
+    font: var(--link-font);
+    color: var(--main-bg-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.01563rem;
+    border: none;
+    background-color: transparent;
+}
+.send__block{
+    margin-top: 90px;
+}
+.raiting__send .arrow-path {
+    transition-duration: .3s;
+  }
+  .raiting__send:hover .arrow-path {
+    transform: translateX(32px);
+  }
+.choose__input{
+    display: none;
+}
+.choose__num{
+    display: none;
+}
+.choose{
+    display: flex;
+}
+.choose__label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #AF9188;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    font: var(--body-font);
+    color: #AF9188;
+}
+.choose__numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #AF9188;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    font: var(--body-font);
+    color: #AF9188;
+}
+
+.choose__num:checked+.choose__numbers {
+    color: #FEFEFF;
+    border-color: #AF9187;
+    background-color: #AF9187;
+  }
+.choose__input:checked+.choose__label {
+    color: #FEFEFF;
+    border-color: #AF9187;
+    background-color: #AF9187;
+  }
+  @media (max-width:1020px){
+    .raiting__subtitle{
+        width: auto;
+    }
+  }
+  @media (max-width: 360px){
+    .raiting__personality{
+        margin-top: 32px;
+    }
+    .raiting__sub{
+        margin-top: 64px;
+    }
+    .raiting__sex {
+        margin-left: 12px;
+    }
+    .raiting__send{
+    font: 0.675rem/1.5rem Druk,sans;
+    }
+  }

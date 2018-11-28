@@ -1,0 +1,34 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0,0,0,.8);
+  z-index: 100;
+}
+
+.modal--hidden {
+  display: none;
+}
+
+.modal__video {
+  width: 80vw;
+  height: 45vw;
+  margin: auto;
+}
+.modal__image {
+  max-width: 80vw;
+  height: auto;
+  object-fit: contain;
+  margin: auto;
+}
+
+@media (max-width: 660px) {
+  .modal__video {
+    width: 95vw;
+    height: 54vw;
+  }
+}
+

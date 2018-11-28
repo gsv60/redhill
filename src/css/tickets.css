@@ -1,0 +1,20 @@
+.tickets__item{
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 4px;
+}
+.tickets__term{
+    font: var(--caption-font);
+    color: var(--main-bg-color);
+    margin-bottom: 19px;
+}
+.tickets__value{
+    font: var(--body-font);
+    color: var(--main-bg-color);
+    letter-spacing: 0.02813rem;
+}
+.viewmore__tickets{
+    display: flex;
+    width: 100%;
+}

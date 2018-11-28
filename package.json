@@ -1,0 +1,43 @@
+{
+  "name": "redhill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/maxfox/redhill.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/maxfox/redhill/issues"
+  },
+  "homepage": "https://gitlab.com/maxfox/redhill#README",
+  "dependencies": {
+    "autoprefixer": "^8.6.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.4",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-order": "^1.1.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-replace": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "lost": "^8.2.1",
+    "natives": "^1.1.6",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^7.0.0",
+    "postcss-pxtorem": "^4.0.1",
+    "swiper": "^4.3.5",
+    "webpack": "^4.10.2",
+    "webpack-stream": "^4.0.3"
+  }
+}

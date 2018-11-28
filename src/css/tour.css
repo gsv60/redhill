@@ -1,0 +1,32 @@
+.tour {
+  width: 100vw;
+  padding: 0 calc(50vw - 760px) 0 calc(50vw - 760px);
+}
+
+@media (max-width: 1660px) {
+  .tour{
+    width: 100vw;
+    padding: 0 calc(50vw - 616px) 0 calc(50vw - 616px);
+  }
+}
+@media (max-width: 1400px) {
+  .tour{
+    width: 100vw;
+    padding: 0 calc(50vw - 568px) 0 calc(50vw - 568px);
+  }
+}
+@media (max-width: 1180px) {
+  .tour{
+    padding: 0 calc(50vw - 472px) 0 calc(50vw - 472px);
+  }
+}
+@media (max-width: 1020px) {
+  .tour{
+    padding: 0 40px 0 40px;
+  }
+}
+@media (max-width: 660px) {
+  .tour{
+    padding: 0 24px 0 24px;
+  }
+}

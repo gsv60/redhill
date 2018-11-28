@@ -1,0 +1,135 @@
+.exposition__subtitle {
+    font: var(--subtitle-font);
+    color: #4A3E3C;
+}
+
+.exposition__slide {
+    width: 368px;
+    display: flex;
+    flex-direction: column;
+    cursor: grab;
+    margin: 0 16px 16px 0;
+}
+
+.exposition__image {
+    width: 368px;
+    height: 192px;
+    object-fit: cover;
+}
+.show-more:hover{
+    color: #C15430;
+}
+
+.show-more {
+    font: var(--link-font);
+    color: #4A3E3C;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: .4s;
+}
+.show-more:hover .show-more{
+    color: #C15430;
+}
+.show-more:hover .arrow-down::before,
+.show-more:hover .arrow-down::after{
+    background-color: #C15430;
+}
+.exposition__list {
+    margin-top: 48px;
+    margin-bottom: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -16px;
+}
+
+.arrow-down {
+    height: 10px;
+    width: 14px;
+    position: relative;
+    top: -14px;
+    left: 178px; 
+}
+
+.arrow-down:before, .arrow-down:after {
+    content: "";
+    height: 30%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    background: #4A3E3C;
+    
+}
+
+.arrow-down:before {
+    left: 0;
+    transform: skew(0deg, 40deg);
+    transition-duration: .4s;
+}
+
+.arrow-down:after {
+    right: 0;
+    transform: skew(0deg, -40deg);
+    transition-duration: .4s;
+}
+
+
+@media (max-width: 1660px) {
+    .exposition__slide {
+        width: 296px;
+    }
+    .exposition__image {
+        width: 296px;
+        height: 154px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .exposition__slide {
+        width: 272px;
+    }
+    .exposition__image {
+        width: 272px;
+        height: 142px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .exposition__slide {
+        width: 304px;
+    }
+    .exposition__image {
+        width: 304px;
+        height: 156px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .exposition__slide {
+        width: calc(50vw - 56px);
+    }
+    .exposition__image {
+        width: 100%;
+        height: calc(30.49vw - 35px);
+    }
+}
+
+@media (max-width: 660px) {
+    .exposition__list {
+      margin-right: 0;
+    }
+    .exposition__slide {
+      width: calc(100vw - 48px);
+      margin-right: 0;
+    }
+    .exposition__image {
+        width: 100%;
+        height: calc((100vw - 48px) * 0.6153);
+    }
+}
+
+@media (min-width: 661px) {
+  .exposition__list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

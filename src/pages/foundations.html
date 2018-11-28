@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Фонды</title>
+    <link rel="stylesheet" href="/css/styles.css" media="all">
+    <script src="/js/bundle.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="/" class="logo">
+            <img class="logo__img" src="/svg/logo.svg" />
+            <img class="logo__small-img" src="/svg/logo-small.svg" />
+        </a>
+        <div class="header__buttons">
+            <button class="burger">
+                Меню
+            </button>
+            <button class="header__goback">
+                <svg xmlns="http://www.w3.org/2000/svg" height="8" width="38" fill="none" class="header-svg">
+                    <path d="M38.001 3H8v2h30.001zM8 8V0L0 4z" fill="#4b4140" /></svg>
+                Назад
+            </button>
+        </div>
+    </header>
+    <!-- Menu -->
+    <div class="menu">
+        <div class="menu__head">
+            <a href="/" class="logo">
+                <img class="logo__img" src="/svg/logo-white.svg" />
+                <img class="logo__small-img" src="/svg/logo-white-small.svg" />
+            </a>
+            <a href="#" class="menu__lang">EN</a>
+            <a href="#" class="menu__glasses">
+                <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="glasses-icon" fill-rule="evenodd" clip-rule="evenodd" d="M13 18C16.3137 18 19 15.3137 19 12C19 8.68629 16.3137 6 13 6C9.68629 6 7 8.68629 7 12C7 15.3137 9.68629 18 13 18ZM20.3652 8.87152C19.1473 6.00793 16.3081 4 13 4C8.58172 4 5 7.58172 5 12C5 16.4183 8.58172 20 13 20C17.4183 20 21 16.4183 21 12C21 11.6098 20.9721 11.2262 20.9181 10.8509C21.8189 10.3106 22.8732 10 24 10C25.1268 10 26.1811 10.3106 27.0819 10.8509C27.0279 11.2262 27 11.6098 27 12C27 16.4183 30.5817 20 35 20C39.4183 20 43 16.4183 43 12C43 7.58172 39.4183 4 35 4C31.6919 4 28.8527 6.00793 27.6348 8.87152C26.5442 8.31429 25.3088 8 24 8C22.6912 8 21.4558 8.31429 20.3652 8.87152ZM29 12C29 15.3137 31.6863 18 35 18C38.3137 18 41 15.3137 41 12C41 8.68629 38.3137 6 35 6C31.6863 6 29 8.68629 29 12Z"
+                        fill="white" />
+                </svg>
+            </a>
+            <button class="menu__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="close-icon" fill-rule="evenodd" clip-rule="evenodd" d="M21.9954 3.41422L20.5812 2L11.9977 10.5835L3.41426 2.00005L2.00005 3.41426L10.5835 11.9977L2 20.5812L3.4142 21.9954L11.9977 13.4119L20.5811 21.9953L21.9953 20.5811L13.4119 11.9977L21.9954 3.41422Z"
+                        fill="white" />
+                </svg>
+            </button>
+        </div>
+        <div class="menu__top">
+            <a class="menu__top-link" href="#">Афиша</a>
+            <a class="menu__top-link" href="#">Экскурсии</a>
+            <a class="menu__top-link" href="#">Экспозиции и выставки</a>
+            <a class="menu__top-link" href="#">Детские программы</a>
+            <a class="menu__top-link menu__primary-link" href="#">История</a>
+        </div>
+        <div class="menu__top menu__top--mobile">
+            <a class="menu__top-link" href="#">О музее</a>
+            <a class="menu__top-link" href="#">Статьи и публикации</a>
+            <a class="menu__top-link" href="#">Партнеры и спонсоры</a>
+        </div>
+        <div class="menu__top menu__top--mobile">
+            <a class="menu__top-link" href="#">Как добраться</a>
+        </div>
+        <div class="menu__secondary">
+            <div class="menu__column">
+                <a class="menu__secondary-link" href="#">О музее</a>
+                <a class="menu__secondary-link" href="#">Новости</a>
+                <a class="menu__secondary-link" href="#">Официально</a>
+                <a class="menu__secondary-link" href="#">Контакты</a>
+                <a class="menu__secondary-link" href="#">Оценка качества</a>
+            </div>
+            <div class="menu__column">
+                <a class="menu__secondary-link" href="#">Фонды</a>
+                <a class="menu__secondary-link" href="#">Публикации</a>
+                <a class="menu__secondary-link" href="#">Альманах</a>
+                <a class="menu__secondary-link" href="#">Мультимедиа</a>
+                <a class="menu__secondary-link" href="#">Книги и буклеты</a>
+            </div>
+            <div class="menu__column">
+                <a class="menu__secondary-link" href="#">Гостевая книга</a>
+                <a class="menu__secondary-link" href="#">Международное сотрудничество</a>
+                <a class="menu__secondary-link" href="#">Партнёры и спонсоры</a>
+            </div>
+            <div class="menu__column menu__column--right">
+                <a class="menu__secondary-link" href="#">Как добраться</a>
+                <a class="menu__secondary-link" href="#">Услуги</a>
+            </div>
+        </div>
+        <form class="menu__search">
+            <input class="menu__input" type="text" placeholder="Поиск по сайту">
+            <button class="subscribe__button">
+                <span class="subscribe__arrow">
+                    <svg viewBox="0 0 80 24" class="subscribe__arrow-svg">
+                        <g class="arrow-path">
+                            <path fill="rgba(255,255,255,.5)" id="path4" d="m -32,11 h 72 v 2 h -72 z" />
+                            <path fill="rgba(255,255,255,.5)" id="path6" d="M 40,16 V 8 l 8,4 z" />
+                        </g>
+                    </svg>
+                </span>
+            </button>
+        </form>
+        <div class="menu__footer">
+            <div class="menu__footer-left">
+                <div class="menu__social">
+                    <a class="menu__social-link" href="#">Vkontakte</a>
+                    <a class="menu__social-link" href="#">Facebook</a>
+                    <a class="menu__social-link" href="#">Instagram</a>
+                    <a class="menu__social-link" href="#">Ok.ru</a>
+                </div>
+                <div class="menu__madeby">Сделано в <a href="https://petrogradweb.ru">Petrogradweb</a></div>
+            </div>
+            <div class="menu__footer-right">
+                Часы работы:</br>Ежедневно, с 9:00 до 21:00
+            </div>
+        </div>
+    </div>
+    <main class='content'>
+        <div class="excursion">
+            <div class="excursion__nav">
+                <div class="breadcrumbs">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </div>
+            </div>
+            <h3 class="kids__title title">Фонды</h3>
+            <div class="foundation__nav">
+                <div class="foundation__nav-left">
+                    <div class="off__menu js-tab-button" data-tab-target="tab1">
+                        О фондах
+                    </div>
+                    <div class="off__menu js-tab-button" data-tab-target="tab2">
+                        АИК Кузбасс
+                    </div>
+                    <div class="off__menu js-tab-button" data-tab-target="tab3">
+                        Копикуз
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="js-tab" id="tab1">
+                    <div class="sponsors__subtitle"><p>Формирование фондовых собраний является самым ответственным видом деятельности музея, поскольку их полнота и разнообразие оказывает решающее влияние на научно-исследовательскую, экспозиционную и просветительскую деятельность музея.</p>
+                        <p>Специфической особенностью музеев-заповедников является то, что музейными предметами для них являются не только движимые, но и недвижимые памятники, которые помогают документировать историю. Музей-заповедник «Красная Горка» расположен в районе Красная горка на территории бывшего Кемеровского угольного рудника. Он создан на базе памятников горнопромышленного наследия, оставшихся от деятельности двух организаций: АО «Копикуз» и АИК «Кузбасс». Поэтому музею не пришлось определяться с темами, подлежащими изучению и документированию.</p>
+                        <p>Формирование фондов началось в 1991 году, одновременно с созданием музея-заповедника «Красная горка». Основным тематическим направлением комплектования стала историческая роль Кемеровского рудника, АО «Копикуз» и АИК «Кузбасс» в промышленном развитии Кузбаса.</p>
+                        <p> В ходе комплектования выяснилось, что невозможно проводить комплектование фондов музея, жестко ограничиваясь только темой Кемеровского рудника. История первого градообразующего промышленного предприятия оказалась неразрывно связанной с общей историей города Кемерова.</p>
+                        <p>Рудник в начале ХХ века был главной инновационной площадкой, откуда распространялись на город новейшие технологии в области промышленности, строительства, сельского хозяйства. Коксохимический завод, входивший в единый промышленный комплекс с рудником, положил начало новой химической специализации города. Благодаря руднику на месте сельских поселений был создан город, который по имени рудника получил название Кемерово. Судьбы многих выдающихся людей, ставших фондообразователями личных коллекций, были связаны не только с рудником, но и с городом.</p>
+                        <p>В связи с этим в фондах музея появились коллекции, документирующие различные аспекты истории города.</p>
+                    </div>                                    
+                    <div class="foundations__list swiper-container">
+                        <div class="foundations__list-wrapper swiper-wrapper">
+                            <article class="exposition__slide swiper-slide grayscale-hover">
+                                <img class="exposition__image grayscale-target" src="/images/exposition/Фото (1).png" alt="">
+                            </article>
+                            <article class="exposition__slide swiper-slide grayscale-hover">
+                                <img class="exposition__image grayscale-target" src="/images/exposition/6541.png" alt="">
+                            </article>
+                            <article class="exposition__slide swiper-slide grayscale-hover">
+                                <img class="exposition__image grayscale-target" src="/images/exposition/sdfsfsadf.png" alt="">
+                            </article>
+                            <article class="exposition__slide swiper-slide grayscale-hover">
+                                <img class="exposition__image grayscale-target" src="/images/exposition/efrsef.png" alt="">
+                            </article>
+                            <article class="exposition__slide swiper-slide grayscale-hover">
+                                <img class="exposition__image grayscale-target" src="/images/exposition/sfsf.png" alt="">
+                            </article>
+                            <article class="exposition__slide swiper-slide grayscale-hover">
+                                <img class="exposition__image grayscale-target" src="/images/exposition/sfsfs.png" alt="">
+                            </article>
+                            <article class="exposition__slide swiper-slide grayscale-hover">
+                                <img class="exposition__image grayscale-target" src="/images/exposition/gfb.png" alt="">
+                            </article>
+                            <article class="exposition__slide swiper-slide grayscale-hover">
+                                <img class="exposition__image grayscale-target" src="/images/exposition/rtetet.png" alt="">
+                            </article>
+                        </div>
+                    </div>
+                    <div class="volunteers__content">
+                        <div class="excursion__content-left">
+                            <h3 class="foundations__title">
+                                Доступ к музейным фондам
+                            </h3>
+                            <div class="foundations__input-block">
+                                <input type="text" class="foundation__input" placeholder="Ф.И.О.">
+                                <input type="text" class="foundation__input" placeholder="Номер телефона">
+                                <input type="text" class="foundation__input" placeholder="Ваш e-mail">
+                                <input type="text" class="foundation__input" placeholder="Цель использования материалов из фондов нашего музея">
+                                <input type="text" class="foundation__input" placeholder="Полная тема и названия коллекций музея">
+                            </div>
+                            <div class="foundations__send">
+                                <a class="raiting__send" href="#">
+                                    отправить
+                                    <svg class="services__card-arrow" viewBox="0 0 80 24">
+                                        <g class="arrow-path">
+                                            <path style="fill:#4b4140" id="path4" d="m -32,11 h 72 v 2 h -72 z" />
+                                            <path style="fill:#4b4140" id="path6" d="M 40,16 V 8 l 8,4 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="kids-subscribe__policity">
+                                Отправляя свои данные через форму вы соглашаетесь с <a href="#" class="policity__link">политикой
+                                    конфиденциальности</a>
+                            </div>
+                        </div>
+                        <div class="foundations__content-right">
+                            <div class="foundations-right__description">
+                                Информация о ряде экспонатов опубликована в Государственном каталоге Музейного фонда
+                                Российской Федерации
+                            </div>
+                            <div class="sponsors__block">
+                                <a class="raiting__send" href="#">
+                                    Подробнее
+                                    <svg class="services__card-arrow" viewBox="0 0 80 24">
+                                        <g class="arrow-path">
+                                            <path style="fill:#4b4140" id="path4" d="m -32,11 h 72 v 2 h -72 z" />
+                                            <path style="fill:#4b4140" id="path6" d="M 40,16 V 8 l 8,4 z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsors__subtitle js-tab" id="tab2">
+                    Эта коллекция является наиболее ценной, имеющей общероссийское и даже мировое значение. АИК
+                    «Кузбасс» - уникальная международная
+                    организация, действовавшая в Кузбассе в 1920-е годы, была единственным в мире экспериментом,
+                    имеющим не только
+                    всероссийское, но и международное значение. Поскольку музей-заповедник «Красная Горка» создан на
+                    базе памятников
+                    АИК и находится в центр ее деятельности, его целью является комплектования материалов по этой теме
+                    в максимально
+                    возможном объеме.<p><br /> Сложность в документировании этой темы заключается в том, что главные
+                        фондообразователи
+                        - потомки колонистов, живут в разных странах мира. Из США и Голландии поступила значительная
+                        часть материалов.
+                        Но главными источниками подлинных музейных предметов по истории АИК «Кузбасс» стали колонисты и
+                        их потомки,
+                        оставшиеся жить в Кемерове, Кузбассе и СССР.</p><br /> Коллекция материалов по теме АИК
+                    «Кузбасс» состоит из документов,
+                    фотографий, книг, личных вещей и инструментов, привезенных из-за границы. На базе полученных
+                    материалов сформирован
+                    фонд АИК «Кузбасс» и личные фонды колонистов.<p><br /> Ценным приобретением музея стала коллекция
+                        подлинных чертежей
+                        периода АИК, поступившая в музей из технического архива коксохимического завода.</p><br />
+                    Коллекционеры передали в
+                    дар музею денежные знаки, выпускавшиеся в колонии. <p><br />Большой массив уникальных
+                        изобразительных и документальных
+                        материалов по истории АИК «Кузбасс» поступил в фонд музея в виде копий. Подлинники этих
+                        материалов находятся
+                        в ведущих хранилищах мира (библиотека Конгресса США, Национальный архив США, Станфордский
+                        университет в Калифорнии,
+                        Архив Гувера, Институт социальной истории и Архив города Амерсфорт в Нидерландах, библиотеки
+                        университетов
+                        Великобритании, Канадский университет в Галифаксе и пр.). В связи с невозможностью получить эти
+                        материалы
+                        в подлинном виде, копии рассматриваются музеем в качестве первоисточников.</p>
+                </div>
+                <div class="sponsors__subtitle js-tab" id="tab3">
+                    Акционерное общество «Копикуз» в 1912-1919 годах осуществляло индустриализацию Кузбасса, привлекая
+                    иностранные капиталы и
+                    лучших специалистов России. На Красной горке сохранились сооружения Копикуза, признанные
+                    памятниками горнопромышленного
+                    наследия. <p><br />Изучение и документирование истории Копикуза стало одной из главных тем
+                        исследовательской и собирательской
+                        работы музея. Сложность комплектования подлинных материалов по этой теме связана с большим
+                        временным разрывом
+                        между деятельностью Копикуза и созданием музея-заповедника, а также полным отсутствием
+                        фондообразователей.</p><br />
+                    Из подлинных материалов Копикуза можно выделить коллекцию чертежей, поступивших из архива
+                    коксохимического
+                    завода.<p><br />В результате сотрудничества с коллекционерами, собрание музея пополнилось
+                        чрезвычайно редкими акциями
+                        АО «Копикуз» и АО «Кольчугинская железная дорога», а также денежными знаками, выпускавшимися
+                        Копикузом. Основная
+                        часть музейного фонда по истории АО «Копикуз» состоит в основном из копийных материалов.
+                        Большая часть подлинных
+                        материалов по этой теме хранится в архивах разных городов России. Из архивов Барнаула и Томска
+                        привезены
+                        цифровые копии документов и чертежей по этой теме. В результате сотрудничества с организацией
+                        «Уголь С»,
+                        проводившей изучение деятельности акционерного общества, в музей поступили бумажные копии
+                        документов из Российского
+                        государственного архива Санкт-Петербурга.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__copyright">
+            &copy; 2018 Музей-заповедник "Красная горка"
+        </div>
+        <a href="#" class="footer__confident">
+            Политика конфидециальности
+        </a>
+        <a href="https://petrogradweb.ru" class="footer__madeby">
+            Сделано в PetrogradWeb
+        </a>
+    </footer>
+</body>
+
+</html>

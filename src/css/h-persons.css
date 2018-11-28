@@ -1,0 +1,129 @@
+.h-persons {
+  position: relative;
+  padding: 128px calc(50vw - 760px);
+}
+.h-persons__title {
+  text-align: center;
+  font: var(--title-font);
+  color: var(--main-bg-color);
+  margin-bottom: 136px;
+}
+.h-persons__list {
+  display: flex;
+}
+.h-persons__item {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  margin-right: 16px;
+  text-decoration: none;
+}
+.h-persons__item:last-child {
+  margin-right: 0;
+}
+.h-persons__item:hover .h-persons__name,
+.h-persons__item:hover .h-persons__country {
+  color: #CE6340;
+}
+.h-persons__image {
+  width: 100%;
+  margin-bottom: 17px;
+}
+.h-persons__image img {
+  max-width: 100%;
+  height: auto;
+}
+.h-persons__name {
+  font: var(--caption-font);
+  color: var(--main-bg-color);
+  text-align: center;
+  margin-bottom: 5px;
+  transition-duration: .3s;
+  text-decoration: none;
+}
+.h-persons__country {
+  text-align: center;
+  font: var(--body-font);
+  color: var(--main-bg-color);
+  transition-duration: .3s;
+}
+@media (max-width: 1800px) {
+  .h-persons {
+    padding: 107px calc(50vw - 760px);
+  }
+}
+@media (max-width: 1660px) {
+  .h-persons {
+    padding: 61px calc(50vw - 616px);
+  }
+  .h-persons__item {
+    width: 192px;
+  }
+}
+@media (max-width: 1400px) {
+  .h-persons {
+    padding: 61px calc(50vw - 568px);
+  }
+  .h-persons__title {
+    margin-bottom: 94px;
+  }
+  .h-persons__item {
+    width: 176px;
+  }
+  .h-persons__image {
+    margin-bottom: 6px;
+  }
+  .h-persons .viewmore {
+    padding-top: 76px;
+  }
+}
+@media (max-width: 1180px) {
+  .h-persons {
+    padding: 61px 0;
+  }
+  .h-persons__title {
+    margin-left: calc(50vw - 472px);
+    margin-bottom: 94px;
+  }
+  .h-persons__item {
+    width: 224px;
+    flex: none;
+  }
+}
+@media (max-width: 1020px) {
+  .h-persons__title {
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 64px;
+  }
+  .h-persons__item {
+    width: 240px;
+    margin-right: 24px;
+  }
+  .h-persons__image {
+    margin-bottom: 17px;
+  }
+  .h-persons__name {
+    text-align: left;
+    line-height: 20px;
+    letter-spacing: 0.9px;
+  }
+  .h-persons__country {
+    display: none;
+  }
+  .h-persons .viewmore {
+    padding-top: 50px;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 660px) {
+  .h-persons {
+    padding: 0;
+  }
+  .h-persons__title {
+    margin-left: 24px;
+  }
+  .h-persons .viewmore {
+    margin-left: 24px;
+  }
+}

@@ -1,0 +1,96 @@
+.search__send {
+    position: relative;
+    left: 1475px;
+    top: -31px;
+    background: none;
+    border: none;
+    width: 80px; 
+    height: 24px;
+    cursor: pointer;
+    outline: none;
+  }
+  .search__result{
+    margin-top: 40px;
+    border: none;
+    border-bottom: 2px solid #DBD1CC;
+    padding-bottom: 38px;
+  }
+  .search__result-title{
+      font: var(--caption-font);
+      color: #4A3E3C;
+      margin-top: 16px;
+  }
+  .search__input {
+    color: #4A3E3C;
+    font: 1.125rem/1.5rem 'TT Commons', sans;
+    font: var(--body-font);
+    padding: 8px 0;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #4b3934;
+    border-bottom: 2px solid var(--main-bg-color);
+    outline: none;
+    margin-top: 40px;
+}
+.search-monuments__next:hover .subscribe__arrow-svg > .arrow-path path{
+  fill: #CE6340;
+}
+.search-monuments__next {
+  position: relative;
+  left: 33px;
+  top: -31px;
+  background: none;
+  border: none;
+  width: 80px;
+  height: 24px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  margin-left: auto;
+}
+  @media (max-width: 1660px){
+    .search__send {
+      left: 1186px;
+    }
+  }
+  @media (max-width: 1400px){
+    .search__send {
+      left: 1090px;
+    }
+  }
+  @media (max-width: 1180px){
+    .search__send {
+      left: 898px;
+    }
+  }
+  @media (max-width: 770px){
+    .search__send {
+      left: 642px;
+  }
+  }
+  @media (max-width: 660px){
+    .search__send {
+      left: 566px;
+    }
+  }
+  @media (max-width: 415px){
+    .search__send {
+      left: 321px;
+  }
+  }
+  @media (max-width: 380px){
+    .search__send {
+      left: 286px;
+    }
+  }
+  @media (max-width: 360px){
+    .search__send {
+      left: 267px;
+    }
+  }
+  @media (max-width: 320px){
+    .search__send {
+      left: 226px;
+  }
+  }

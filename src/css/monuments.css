@@ -1,0 +1,122 @@
+.monuments__image {
+    margin-bottom: 24px;
+    margin-right: 16px;
+    width: 368px;
+    height: 192px;
+}
+
+.monuments__title {
+    font: var(--subtitle-font);
+    color: #4A3E3C;
+    margin-bottom: 16px;
+    margin-top: 96px;
+}
+.monuments__title:first-child{
+    margin-top: 0;
+}
+
+.monuments__year {
+    font: var(--body-font);
+    color: #4A3E3C;
+}
+
+.monuments__slide {
+    width: 368px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px 16px 0;
+}
+.monuments__list{
+    font: var(--title-font);
+    color: #4A3E3C;
+    margin-top: 56px;
+    border: none;
+    border-bottom: 2px solid #DBD1CD;
+  }
+  .monuments__list:last-child{
+      border: none;
+  }
+  .monuments-schedule__wrapper{
+      margin-top: 104px;
+  }
+  .kids-schedule__wrapper{
+      display: flex;
+  }
+@media (max-width: 1660px) {
+    .monument__image {
+        width: 296px;
+        height: 154px;
+    }
+    .monuments__image {
+        width: 296px;
+        height: 154px;
+    }
+    .monuments__slide {
+        width: 296px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .monument__image {
+        width: 272px;
+        height: 142px;
+    }
+    .monuments__image {
+        width: 272px;
+        height: 142px;
+    }
+    .monuments__slide {
+        width: 272px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .monument__image {
+        width: 304px;
+        height: 156px;
+    }
+
+}
+
+@media (max-width: 1020px) {
+    .monument__image {
+        width: 100%;
+    }
+    .monument__text{
+        width: auto;
+    }
+    .monument__intro-paragraph{
+        width: auto;
+    }
+    .monuments__image {
+        width: 316px;
+        height: 174px;
+    }
+}
+
+@media (max-width: 660px) {
+    
+    .monuments__slide {
+        width: calc(50vw - 48px);
+    }
+
+    .monuments__title {
+        margin-top: 48px;
+    }
+    .monuments__list {
+        margin-top: 24px;
+        padding-bottom: 48px;
+
+    }
+}
+@media (max-width: 380px){
+    .monuments__slide {
+        width: calc(100vw - 48px);
+    }
+}
+@media (max-width: 320px){
+    .monuments__image {
+        width: 272px;
+        height: 142px;
+    }
+}

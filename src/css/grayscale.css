@@ -1,0 +1,11 @@
+@media (min-width: 1181px) {
+    .grayscale-target {
+        filter: grayscale(1);
+        transition: filter 0.5s;
+    }
+
+    .grayscale-hover:hover .grayscale-target,
+    .grayscale-hover.grayscale-target:hover {
+        filter: none;
+    }
+}

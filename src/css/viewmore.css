@@ -1,0 +1,50 @@
+.viewmore {
+  display: flex;
+  justify-content: center;
+  padding: 128px 0 0 0;
+  width: 100%;
+}
+.viewmore__link {
+  position: relative;
+  font: var(--link-font);
+  color: var(--main-bg-color);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-duration: .4s;
+}
+.viewmore__link:hover{
+  color: #D06A49;
+}
+.viewmore__link::after {
+  content: '';
+  display: block;
+  background-image: url('../svg/zigzag.svg');
+  background-repeat: repeat;
+  background-position: left;
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  bottom: -12px;
+  left: 0;
+  transition-duration: .3s;
+}
+
+@media (max-width: 1800px) {
+  .viewmore {
+    padding: 106px 0 0 0;
+  }
+}
+@media (max-width: 1660px) {
+  .viewmore {
+    padding: 86px 0 0 0;
+  }
+}
+@media (max-width: 1020px) {
+  .viewmore {
+    padding: 86px 0 0 0;
+    justify-content: flex-start;
+    letter-spacing: 0.2px;
+  }
+}
+

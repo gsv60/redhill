@@ -1,0 +1,58 @@
+.chapters {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #4A3E3C;
+  padding: 68px calc(50vw - 760px);
+}
+
+.chapters--hidden {
+  display: none;
+}
+
+.chapters__link {
+  font: 40px/48px "Druk";
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition-duration: .3s;
+}
+.chapters__link:hover{
+  color: #C15430;
+}
+
+@media (max-width: 1660px) {
+  .chapters {
+    padding: 8px calc(50vw - 616px);
+  }
+}
+@media (max-width: 1400px) {
+  .chapters {
+    padding: 24px calc(50vw - 568px);
+  }
+}
+@media (max-width: 1180px) {
+  .chapters {
+    padding: 24px calc(50vw - 472px);
+  }
+}
+@media (max-width: 1020px) {
+  .chapters {
+    align-items: center;
+    padding: 24px 40px;
+  }
+  .chapters__link {
+    text-align: center;
+  }
+}
+@media (max-width: 660px) {
+  .chapters {
+    padding: 24px 24px;
+  }
+}
+

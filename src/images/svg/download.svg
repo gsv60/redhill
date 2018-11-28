@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4a3e3c;
+      }
+    </style>
+  </defs>
+  <g id="download" transform="translate(-309.999 -1671)">
+    <path id="download-2" data-name="download" class="cls-1" d="M13621-15095v-2h7l-1.414-1.415h0l-4.948-4.952,1.414-1.41,3.951,3.951V-15109h2v8.173l3.951-3.948,1.414,1.41-4.952,4.952L13628-15097h7v2Z" transform="translate(-13311 16780)"/>
+  </g>
+</svg>

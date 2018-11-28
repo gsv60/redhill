@@ -1,0 +1,234 @@
+.monument__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 24px;
+}
+
+.monument__title {
+  font: var(--title-font);
+  color: #4a3e3c;
+  margin-bottom: 32px;
+}
+
+.monument__intro {
+  margin-top: 24px;
+  margin-bottom: 64px;
+  font: var(--body-font);
+  color: var(--main-bg-color);
+  width: 880px;
+}
+
+.monument__text {
+  margin-top: 60px;
+  font: var(--body-font);
+  color: var(--main-bg-color);
+  width: 880px;
+}
+
+.monument__intro-paragraph {
+  margin-top: 32px;
+  width: 880px;
+}
+
+.monument__intro-paragraph p {
+  margin-top: 32px;
+  width: 880px;
+}
+
+.monument__img {
+  width: 1520px;
+  height: 624px;
+  cursor: grab;
+}
+
+.monument__img img {
+  width: 100%;
+  height: auto;
+}
+
+.monument__gallery {
+  width: 1520px;
+  height: 624px;
+}
+
+.monument__dis {
+  font: var(--body-font);
+  color: #4a3e3c;
+  margin-top: 24px;
+}
+
+.monument__gallery-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.monuments__prev, .monuments__next {
+  background: none;
+  border: none;
+  width: 80px;
+  height: 25px;
+  cursor: pointer;
+  outline: none;
+}
+
+.gallery-pages {
+  display: flex;
+  margin-top: 20px;
+  margin-right: -34px;
+}
+
+.gallery-numbers {
+  font: var(--caption-font);
+  color: #4a3e3c;
+  margin: 0 10px 0 10px;
+}
+
+.monument__image {
+  margin-bottom: 16px;
+  width: 368px;
+  height: 192px;
+}
+
+.monument__year {
+  font: var(--body-font);
+  color: #4a3e3c;
+  margin-bottom: 4px;
+}
+
+.monument__list {
+  font: var(--title-font);
+  color: #4a3e3c;
+  margin-top: 56px;
+}
+
+.monument__slide {
+  width: 368px;
+  display: flex;
+  flex-direction: column;
+  cursor: grab;
+  margin: 48px 16px 0 0;
+}
+
+@media (max-width: 1660px) {
+  .monument__gallery {
+    width: 1232px;
+    height: 506px;
+  }
+  .monument__img img {
+    width: 1232px;
+  }
+  .monument__slide {
+    width: 296px;
+  }
+}
+
+@media(max-width: 1400px) {
+  .monument__gallery {
+    width: 1132px;
+    height: 465px;
+  }
+  .monument__img img {
+    width: 1132px;
+  }
+}
+
+@media(max-width: 1180px) {
+  .monument__gallery {
+    width: 940px;
+    height: 386px;
+  }
+  .monument__img img {
+    width: 940px;
+  }
+  .monument__intro {
+    margin-bottom: 44px;
+  }
+  .monument__slide {
+    width: 304px;
+  }
+}
+
+@media(max-width:1020px) {
+  .monument__slide {
+    width: calc(50vw - 56px);
+  }
+}
+
+@media(max-width: 800px) {
+  .monument__intro {
+    width: auto;
+  }
+  .monument__intro-paragraph p {
+    width: auto;
+  }
+  .monument__gallery {
+    width: 688px;
+    height: 284px;
+  }
+  .monument__img img {
+    width: 688px;
+  }
+}
+
+@media(max-width: 660px) {
+  .monument__gallery {
+    width: 610px;
+    height: 250px;
+  }
+  .monument__img img {
+    width: 610px;
+  }
+  .monument__dis {
+    font: 1rem/1.5rem 'TT Commons', sans;
+  }
+  .gallery-numbers {
+    font: 0.8rem/1.375rem Druk, sans;
+  }
+  .monument__intro {
+    width: auto;
+  }
+  .monument__intro-paragraph {
+    width: auto;
+  }
+  .monument__intro-paragraph p {
+    width: auto;
+  }
+  .monument__text {
+    width: auto;
+  }
+  .monument__intro {
+    margin-bottom: 24px;
+  }
+  .monument__slide {
+    width: calc(100vw - 48px);
+    margin-right: 0;
+}
+}
+
+@media (max-width:420px) {
+  .gallery-pages {
+    display: none;
+  }
+  .monument__gallery {
+    width: 310px;
+    height: 127px;
+  }
+  .monument__img img {
+    width: 310px;
+  }
+  .monument__title {
+    font: 1.6rem/2rem Druk, sans;
+  }
+}
+
+@media(max-width: 320px) {
+  .monument__img img {
+    width: 272px;
+  }
+  .monument__text {
+    margin-top: 0;
+  }
+}

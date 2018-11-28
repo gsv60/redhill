@@ -1,0 +1,111 @@
+.media__container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -16px;
+}
+.media__card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 16px;
+    position: relative;
+    margin-bottom: 48px;
+}
+.media__card::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 192px;
+    background-image: url(../images/media/play-button.svg);
+    background-repeat: no-repeat;
+    background-size: 48px;
+    background-position: center;
+}
+.media__card::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 192px;
+    background-image: url(../images/media/play-button.1.svg);
+    background-repeat: no-repeat;
+    background-size: 48px;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 2;
+}
+.media__card:hover .media__subtitle{
+    color:  #CE5537;
+}
+.media__card:hover::after{
+    opacity: 1;
+}
+.media__filter {
+    margin-top: 16px;
+    color: #4A3E3C;
+    font: var(--s_link-font);
+}
+.media__img {
+    width: 100%;
+    height: 192px;
+    object-fit: cover;
+}
+.media__subtitle {
+    font: var(--caption-font);
+    color: #4A3E3C;
+    transition-duration: .4s;
+}
+@media (max-width: 1660px) {
+    .media__card {
+        width: 296px;
+    }
+    .media__img,
+    .media__card::before,
+    .media__card::after  {
+        height: 154px;
+    }
+}
+@media (max-width: 1400px){
+    .media__card{
+        width: 272px;
+    }
+    .media__img,
+    .media__card::before,
+    .media__card::after  {
+        height: 142px;
+    }
+}
+@media (max-width: 1180px) {
+    .media__card {
+      width: 304px;
+    }
+    .media__img,
+    .media__card::before,
+    .media__card::after  {
+        height: 156px;
+    }
+}
+@media (max-width: 1020px){
+    .media__card{
+        width: calc(50vw - 56px);
+    }
+    .media__img,
+    .media__card::before,
+    .media__card::after  {
+        height: calc((50vw - 56px) * 0.6153);
+    }
+}
+@media (max-width: 660px){
+    .media__card{
+        width: calc(100vw - 48px);
+    }
+    .media__img,
+    .media__card::before,
+    .media__card::after  {
+        height: calc((100vw - 48px) * 0.6153);
+    }
+}
